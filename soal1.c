@@ -1,3 +1,5 @@
+// Nama: Akira Kenji Tanaya
+// NIM : 13224046
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -33,7 +35,7 @@ void isolated (int n, int mat[n][n]){
     }
     printf("\n");
     if (found==0){
-        printf("NOT FOUND\n");
+        printf("\n");
     }
 }
 int main(void) {
