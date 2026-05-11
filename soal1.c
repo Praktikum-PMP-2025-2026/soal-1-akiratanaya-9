@@ -1,5 +1,5 @@
 // Nama: Akira Kenji Tanaya
-// 
+// NIM :13224046
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -16,10 +16,15 @@ int degree(int n,int mat[n][n], int x){
 int max_vertex(int n, int mat[n][n]){
     int max_deg=degree(n, mat, 0);
     int idx= 0;
-    for (int i=1 ; i<n; i++){
+    for (int i=0 ; i<n; i++){
         if (degree(n,mat,i)>max_deg){
             idx= i;
+            max_deg= degree(n,mat,i);
         }
+        // else if (degree(n,mat,i)==max_deg);
+        //     printf("Ini sama dengan pada idx =%d\n", i);
+        //     printf("degree ke -%d = %d\n ", i,degree(n,mat,i) );
+        //     printf("Max_degree=%d\n", max_deg);
     }
     return idx;
 }
