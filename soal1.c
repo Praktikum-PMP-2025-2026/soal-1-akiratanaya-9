@@ -45,7 +45,7 @@ void isolated (int n, int mat[n][n]){
     }
     printf("\n");
     if (found==0){
-        printf("\n");
+        printf("NONE\n");
     }
 }
 int main(void) {
